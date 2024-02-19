@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<H1>PERSONAS</H1>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+
+  select,
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+    <form action="" method="post">
+        <div>
+          <select #typeusers_id name="rol" required>
+            <option value="1">Medico</option>
+            <option value="2">Paciente</option>
+          </select>
+    
+          <label for="nombre">Nombre:</label>
+          <input type="text" #nombre name="name" required>
+          <br>
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" #apellido name="name" required>   <br>
+
+          <label for="cedula">Cedula:</label>
+          <input type="text" #cedula name="name" required>   <br>
+    
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" #correo name="email" required>   <br>
+    
+          <label for="telefono">Telefono:</label>
+          <input type="text" #telefono name="password" required>   <br>
+
+          <label for="especialidad">Especialidad:</label>
+          <input type="text" #especialidad name="name" required>   <br>
+    
+          <button type="button" (click)="registerUser(nombre,apellido,cedula,correo,telefono,especialidad,typeusers_id)">Registrar</button>
+        </div>
+      </form>
+
+    
+</body>
+</html>
